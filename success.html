@@ -1,0 +1,17 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <title>Login Success</title>
+     <script>
+       // After successful authentication
+       window.onload = function() {
+         // Send a message to the parent window indicating authentication success
+         window.parent.postMessage("authenticated", "https://your-framer-domain.com"); // Replace with your Framer domain
+       };
+     </script>
+   </head>
+   <body>
+     <h1>Login Successful</h1>
+   </body>
+   </html>
